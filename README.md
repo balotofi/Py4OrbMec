@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/balotofi/Py4OrbMec">
-    <img src="![Py4OrbMecLogo](https://github.com/balotofi/Py4OrbMec/assets/100206676/984acf19-c0be-4310-b84e-eeddefbf8e67)" alt="Logo" width="80" height="80">
+    <img src="[Py4OrbMecLogo](https://github.com/balotofi/Py4OrbMec/assets/100206676/984acf19-c0be-4310-b84e-eeddefbf8e67)" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">🌟Welcome to the Python for Orbital Mechanics Cohort 👾</h3>
