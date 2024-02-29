@@ -43,10 +43,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+In this 5-week hands-on workshop, we'll dive into the exciting world of Python, with a focus on it's applications for space dynamics.
+
+Whether you're a complete beginner or looking to brush up your skills, this event is perfect for you. Join us as we explore the concepts of python programming language together🤩
+
+🚀 Kickstart your Python space adventure! 🚀
+
+There will be assignments so you can reinforce what you learn.
+Always ask questions and have fun!
+
 - 🗓 Date: 2nd March --> 30th March, 2024
 - ⏰ Time: 11am UTC +0
-- -💻 Platform: Zoom - https://us05web.zoom.us/j/87231541756?pwd=Y8kVga606zPKEaK8byCmXiMAQXntI2.1
-
+- 💻 Platform: Zoom - https://us05web.zoom.us/j/87231541756?pwd=Y8kVga606zPKEaK8byCmXiMAQXntI2.1
 - Meeting ID: 872 3154 1756
 - Passcode: 5s2a8g
 
@@ -62,10 +70,6 @@ To get a local copy up and running follow these simple example steps. The files 
 
 The /code folder contains base code used in each class while the /resources folder contains the pdfs of the presentations shown in the classes.
 
-🚀 Kickstart your Python space adventure! 🚀
-
-There will be assignments so you can reinforce what you learn.
-Always ask questions and have fun!
 
 ### Prerequisites
 
