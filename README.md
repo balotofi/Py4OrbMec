@@ -29,8 +29,10 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
+      <ul>
+       <li><a href="#getsetup">Get set up</a></li>
+      </ul>
     </li>
-    <li><a href="#getsetup">Get set up</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
