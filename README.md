@@ -12,7 +12,7 @@
   <p align="center">
     5-week hands-on workshop, diving into the exciting world of Python, with a focus on its applications for space dynamics.
     <br />
-    <a href="http://youtube.com/channel/balotofi">View Classes on YouTube</a>
+    <a href="https://www.youtube.com/channel/UCXtv7IBtgJKBd1xiDkFh-cw">View Classes on YouTube</a>
   </p>
 </div>
 
