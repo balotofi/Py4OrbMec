@@ -12,9 +12,6 @@
   <p align="center">
     5-week hands-on workshop, diving into the exciting world of Python, with a focus on its applications for space dynamics.
     <br />
-    <a href="https://github.com/balotofi/Py4OrbMec"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="http://youtube.com/channel/balotofi">View Classes on YouTube</a>
   </p>
 </div>
@@ -33,7 +30,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#getsetup">Get set up</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -73,8 +70,8 @@ Always ask questions and have fun!
 Before starting this course, you should have knowledge of basic Python (have dabbled in object oriented programming) and an understanding of Newton's mechanics.
 
 
-<!-- USAGE -->
-### USAGE
+<!-- Get set up -->
+### Get set up
 
 1. Open Terminal.
 
