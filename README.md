@@ -64,7 +64,9 @@ Always ask questions and have fun!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps. The files are separeated into the /code folder and the /resources folder.
+To get a local copy up and running follow the steps in the ```Get set up``` section. 
+
+The files are separeated into the /code folder and the /resources folder.
 
 The /code folder contains base code used in each class while the /resources folder contains the pdfs of the presentations shown in the classes.
 
