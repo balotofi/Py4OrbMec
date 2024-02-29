@@ -46,12 +46,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-🗓 Date: 2nd March --> 30th March, 2024
-⏰ Time: 11am UTC +0
-💻 Platform: Zoom - https://us05web.zoom.us/j/87231541756?pwd=Y8kVga606zPKEaK8byCmXiMAQXntI2.1
+- 🗓 Date: 2nd March --> 30th March, 2024
+- ⏰ Time: 11am UTC +0
+- -💻 Platform: Zoom - https://us05web.zoom.us/j/87231541756?pwd=Y8kVga606zPKEaK8byCmXiMAQXntI2.1
 
-Meeting ID: 872 3154 1756
-Passcode: 5s2a8g
+- Meeting ID: 872 3154 1756
+- Passcode: 5s2a8g
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
