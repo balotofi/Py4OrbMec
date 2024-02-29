@@ -88,11 +88,13 @@ Before starting this course, you should have knowledge of basic Python (have dab
 4. Press *Enter* to create your local clone.
    ```sh
    $ git clone https://github.com/balotofi/Py4OrbMec
-   > Cloning into `Spoon-Knife`...
-   > remote: Counting objects: 10, done.
-   > remote: Compressing objects: 100% (8/8), done.
-   > remove: Total 10 (delta 1), reused 10 (delta 1)
-   > Unpacking objects: 100% (10/10), done.
+   > Cloning into 'Py4OrbMec'...
+   > remote: Enumerating objects: 51, done.
+   > remote: Counting objects: 100% (51/51), done.
+   > remote: Compressing objects: 100% (48/48), done.
+   > remote: Total 51 (delta 12), reused 0 (delta 0), pack-reused 0
+   > Receiving objects: 100% (51/51), 30.01 KiB | 1.07 MiB/s, done.
+   > Resolving deltas: 100% (12/12), done.
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
