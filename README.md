@@ -64,13 +64,11 @@ Always ask questions and have fun!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Whether you're a complete beginner or looking to brush up your skills, this event is perfect for you. Join us as we explore the concepts of python for space together🤩
-
 To get a local copy up and running follow these simple example steps. The files are separeated into the /code folder and the /resources folder.
 
 The /code folder contains base code used in each class while the /resources folder contains the pdfs of the presentations shown in the classes.
 
-
+<!-- Prerequisites -->
 ### Prerequisites
 
 Before starting this course, you should have knowledge of basic Python (have dabbled in object oriented programming) and an understanding of Newton's mechanics.
