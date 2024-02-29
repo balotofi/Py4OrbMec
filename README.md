@@ -87,7 +87,7 @@ Before starting this course, you should have knowledge of basic Python (have dab
    ```
 4. Press *Enter* to create your local clone.
    ```sh
-   $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   $ git clone https://github.com/balotofi/Py4OrbMec
    > Cloning into `Spoon-Knife`...
    > remote: Counting objects: 10, done.
    > remote: Compressing objects: 100% (8/8), done.
