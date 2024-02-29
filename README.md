@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/balotofi/Py4OrbMec">
-    <img src="[Py4OrbMecLogo](https://github.com/balotofi/Py4OrbMec/assets/100206676/984acf19-c0be-4310-b84e-eeddefbf8e67)" alt="Logo" width="80" height="80">
+    <img src="https://github.com/balotofi/Py4OrbMec/assets/100206676/984acf19-c0be-4310-b84e-eeddefbf8e67" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">🌟Welcome to the Python for Orbital Mechanics Cohort 👾</h3>
@@ -15,10 +15,9 @@
     <a href="https://github.com/balotofi/Py4OrbMec"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/balotofi/Py4OrbMec">View Classes on YouTube</a>
+    <a href="http://youtube.com/channel/balotofi">View Classes on YouTube</a>
   </p>
 </div>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -40,7 +39,6 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -99,18 +97,14 @@ Before starting this course, you should have knowledge of basic Python (have dab
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ]📍 WEEK 1: INTRO & 2-BODY PROBLEM
-- [ ]📍 WEEK 2: MOVING IN AN ELLIPTICAL ORBIT
-- [ ]📍 WEEK 3: COORDINATE SYSTEMS
-- [ ]📍 WEEK 4: MANOEUVRING THE SPACECRAFT - HOHMANN TRANSFER
-- [ ]📍 WEEK 5: LAMBERT’S PROBLEM & PYTHON LIBRARIES FOR SPACE APPLICATIONS 
-
-
-See the [open issues](https://github.com/balotofi/Py4OrbMec/issues) for a full list of proposed features (and known issues).
+- [ ] WEEK 1: INTRO & 2-BODY PROBLEM
+- [ ] WEEK 2: MOVING IN AN ELLIPTICAL ORBIT
+- [ ] WEEK 3: COORDINATE SYSTEMS
+- [ ] WEEK 4: MANOEUVRING THE SPACECRAFT - HOHMANN TRANSFER
+- [ ] WEEK 5: LAMBERT’S PROBLEM & PYTHON LIBRARIES FOR SPACE APPLICATIONS 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +115,6 @@ See the [open issues](https://github.com/balotofi/Py4OrbMec/issues) for a full l
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -141,5 +134,4 @@ Project Link: [https://github.com/balotofi/Py4OrbMec](https://github.com/balotof
 [license-url]: https://github.com/balotofi/Py4OrbMec/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/balotofi
-[product-screenshot]: images/screenshot.png
 
