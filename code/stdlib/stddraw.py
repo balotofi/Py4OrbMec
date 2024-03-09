@@ -14,7 +14,7 @@ commonly used Color objects defined in the color module.
 import time
 import os
 import sys
-import stdlib.color as color
+from . import color
 import string
 
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
@@ -35,7 +35,7 @@ else:
 
 # Define colors so clients need not import the color module.
 
-from stdlib.color import WHITE
+from .color import WHITE
 from stdlib.color import BLACK
 from stdlib.color import RED
 from stdlib.color import GREEN
@@ -650,16 +650,10 @@ def _checkForEvents():
     """
     global _surface
     global _keysTyped
-    
-    #-------------------------------------------------------------------
-    # Begin added by Alan J. Broder
-    #-------------------------------------------------------------------
+
     global _mousePos
     global _mousePressed
-    #-------------------------------------------------------------------
-    # End added by Alan J. Broder
-    #-------------------------------------------------------------------
-    
+
     _makeSureWindowCreated()
 
     for event in pygame.event.get():
@@ -671,18 +665,13 @@ def _checkForEvents():
             (event.button == 3):
             _saveToFile()
             
-        #---------------------------------------------------------------
-        # Begin added by Alan J. Broder
-        #---------------------------------------------------------------
+
         # Every time the mouse button is pressed, remember
         # the mouse position as of that press.
         elif (event.type == pygame.MOUSEBUTTONDOWN) and \
             (event.button == 1): 
             _mousePressed = True
             _mousePos = event.pos                      
-        #---------------------------------------------------------------
-        # End added by Alan J. Broder
-        #---------------------------------------------------------------
 
 #-----------------------------------------------------------------------
 
@@ -746,12 +735,6 @@ def mouseY():
         return _userY(_mousePos[1]) 
     raise Exception(
         "Can't determine mouse position if a click hasn't happened")
-    
-#-----------------------------------------------------------------------
-# End added by Alan J. Broder
-#-----------------------------------------------------------------------
-
-#-----------------------------------------------------------------------
 
 # Initialize the x scale, the y scale, and the pen radius.
 
@@ -929,6 +912,7 @@ def _main():
         _confirmFileSave()
     elif sys.argv[1] == 'reportFileSaveError':
         _reportFileSaveError(sys.argv[2])
+
 
 if __name__ == '__main__':
     _main()
