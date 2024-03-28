@@ -5,6 +5,7 @@
 import math as m
 import stdlib.stdtools as st
 
+#---------------------------- CONSTANTS ----------------------------------------------------
 
 a = 2160000 #semi major axis in meters
 Kerbin_mass = 5.29e22 # mass of the body in kg
@@ -15,11 +16,7 @@ mu = G * Kerbin_mass # kerbin grav const
 T = 2 * m.pi * m.sqrt( (a**3) / mu ) # the orbital period of rocket around Kerbin in days
 n = ( 2 * m.pi ) / T # mean motion of the rocket rad/sec
 
-M = n * t # mean anomaly
-args = [ e, M ]
-E0 = M - e
-
-
+#---------------------------- MAIN CODE ----------------------------------------------------
 
 if __name__ == '__main__':
     # solve for trueanom, get position and velocity

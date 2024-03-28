@@ -1,21 +1,42 @@
 #--------------------------------------------------------------------------------
 # Husseinat Etti-Balogun
 # 28/03/2024
-#--------------------------------------------------------------------------------
+#---------------------------- IMPORTS ------------------------------------------------------
 import math as m
 
+#---------------------------- CONSTANTS ----------------------------------------------------
 
+G = 6.67e-11 # universal constant of gravitation
+a = 2160000 #semi major axis in meters
+Kerbin_mass = 5.29e22 # mass of the body in kg
+e = 0.832 # eccentricity
+t = 900 # time elapsed in seconds
+a = 2160000 #semi major axis in meters
+
+#---------------------------- EQUATIONS ----------------------------------------------------
+
+Kerbin_mass = 5.29e22 # mass of the body in kg
+mu = G * Kerbin_mass # kerbin grav const 
+T = 2 * m.pi * m.sqrt( (a**3) / mu ) # the orbital period of rocket around Kerbin in days
+n = ( 2 * m.pi ) / T # mean motion of the rocket rad/sec
+mu = G * Kerbin_mass # kerbin grav const 
+M = n * t # mean anomaly
+
+args = [ e, M ]
+E0 = M - e
+
+#---------------------------- FUNCTION DEFINITIONS ------------------------------------------
 
 def Kepler(E, args):
-    # defines the function of Kepler's equation
+    ''' Defines the function of Kepler's equation '''
     return ( E + (args[0] * m.sin(E) - args[1]))
 
 def KeplerDeriv (E, args):
-    #defines the derivative function of Kepler's equation
+    ''' Defines the derivative function of Kepler's equation '''
     return ( 1 - args[0] * m.cos(E))
 
 def NewtonsAlgotrithm (f, f_prime, current_guess, args, tolerance=0.01):
-    # newtons method of root solving variable functions
+    ''' Returns current guess and step number using Newtons numerical method of root solving variable functions '''
     step = 1 # step counter
 
     delta_f = f(current_guess, args) / f_prime(current_guess, args) # calculate the ratio of function and derivative
@@ -33,6 +54,7 @@ def NewtonsAlgotrithm (f, f_prime, current_guess, args, tolerance=0.01):
 
 
 def TrueAnomaly():
+    ''' Returns true anomaly value (nu) '''
     eccAnom, steps = NewtonsAlgotrithm(Kepler, KeplerDeriv, E0, args )
     eccFrac = ( 1 - e ) / ( 1 + e )
     halfEccAnom = eccAnom / 2
@@ -40,14 +62,14 @@ def TrueAnomaly():
     return nu 
 
 def polarEqn():
-    # return radial value of position of rocket
+    ''' Returns return radial value of position of rocket '''
     p = a * ( 1 - e**2)
     newDeriv = 1 + e * m.cos(TrueAnomaly())
     r = p / newDeriv
     return r
 
 def visViva():
-    #return velocity at elapsed time
+    ''' Returns return velocity at elapsed time using Vis Viva equation '''
     r = polarEqn()
     v = m.sqrt(mu * ( ( 2 / r ) - ( 1 / a )))
     return v
