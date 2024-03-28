@@ -1,6 +1,11 @@
-#--------------------------------------------------------------------------------
-# Husseinat Etti-Balogun
-# 09/03/2024
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+COES Example
+09/03/2024
+'''
+
 #---------------------------- IMPORTS ----------------------------------------------------
 
 import stdlib.orbittools as st

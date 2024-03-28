@@ -1,6 +1,11 @@
-#--------------------------------------------------------------------------------
-# Husseinat Etti-Balogun
-# 19/03/2024
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+Coordinate Frame Rotation Visualisation Example
+19/03/2024
+'''
+
 #---------------------------- IMPORTS ------------------------------------------------------
 
 import math
@@ -42,10 +47,10 @@ if __name__ == '__main__':
 	z_rotation = Cz(angle)
 	
     plot_config = {
-		'frame_labels': [ 'Z' ],
+          'frame_labels': [ 'Z' ],
 		'frame_colours': [ 'b' ],
 		'filename' : fn 
 		'show' : True
-    }
-
+	}
+		
     plot_reference_frames( [ z_rotation ], plot_config)

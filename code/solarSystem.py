@@ -1,3 +1,11 @@
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+Solar System Visualisation Example
+19/03/2024
+'''
+
 import sys
 import stdlib.stddraw as stddraw
 import stdlib.stdarray as stdarray

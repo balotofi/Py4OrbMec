@@ -1,6 +1,11 @@
-#--------------------------------------------------------------------------------
-# Husseinat Etti-Balogun
-# 28/03/2024
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+Orbit Tools Library 
+28/03/2024
+'''
+
 #---------------------------- IMPORTS ------------------------------------------------------
 
 import math
@@ -30,8 +35,9 @@ M = n * t # mean anomaly
 args = [ e, M ]
 E0 = M - e
 
-#---------------------------- FUNCTION DEFINITIONS ------------------------------------------
+#-----------------------------------------------------------------------------
 
+# Functions for normalising a vector
 
 def norm( v ):
 	'''
@@ -46,6 +52,9 @@ def normed( v ):
 	'''
 	return v / np.linalg.norm( v )
 
+#-----------------------------------------------------------------------
+
+# Functions for matrix rotations
 
 def rotZ( a ):
 	'''
@@ -79,6 +88,9 @@ def rotY( a ):
 		[ -math.sin( a ),0, math.cos( a ) ]
 	] )
 
+#-----------------------------------------------------------------------
+
+# Functions for solving numerical iteration problems
 
 def Kepler(E, args):
     ''' Defines the function of Kepler's equation '''

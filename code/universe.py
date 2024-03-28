@@ -1,3 +1,16 @@
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+Universe Class Definition ans Simulation
+02/03/2024
+'''
+
+#-----------------------------------------------------------------------
+# Copyright © 2000–2015, Robert Sedgewick, Kevin Wayne, and Robert Dondero.
+# Last updated: Fri Oct 20 20:45:16 EDT 2017.
+#-----------------------------------------------------------------------
+
 import sys
 import stdlib.stddraw as stddraw
 import stdlib.stdarray as stdarray

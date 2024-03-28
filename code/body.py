@@ -1,7 +1,24 @@
+'''
+Py4OrbMec | Python for Orbital Mechanics by Husseinat Etti-Balogun
+https://github.com/balotofi/py4orbmec
+
+Orbital Body Class Definition
+02/03/2024
+'''
+
+#-----------------------------------------------------------------------
+# Copyright © 2000–2015, Robert Sedgewick, Kevin Wayne, and Robert Dondero.
+# Last updated: Fri Oct 20 20:45:16 EDT 2017.
+#-----------------------------------------------------------------------
+
+#---------------------------- IMPORTS ----------------------------------------------------
+
+import sys
 
 from stdlib.color import BLACK
 import stdlib.stddraw as stddraw
 
+#-----------------------------------------------------------------------------------------
 class Body:
     AU = 149.6e6 * 1000
 	G = 6.67428e-11
