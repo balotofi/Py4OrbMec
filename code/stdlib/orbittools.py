@@ -3,7 +3,7 @@
 # 28/03/2024
 #---------------------------- IMPORTS ------------------------------------------------------
 
-import math as m
+import math
 import numpy as np
 
 #---------------------------- CONSTANTS ----------------------------------------------------
@@ -22,8 +22,8 @@ r2d = 180 / np.pi # convert a value in radians to degrees
 d2r = 1.0 / r2d # convert a value in degrees to radians
 
 mu = G * Kerbin_mass # kerbin grav const 
-T = 2 * m.pi * m.sqrt( (a**3) / mu ) # the orbital period of rocket around Kerbin in days
-n = ( 2 * m.pi ) / T # mean motion of the rocket rad/sec
+T = 2 * math.pi * math.sqrt( (a**3) / mu ) # the orbital period of rocket around Kerbin in days
+n = ( 2 * math.pi ) / T # mean motion of the rocket rad/sec
 mu = G * Kerbin_mass # kerbin grav const 
 M = n * t # mean anomaly
 
@@ -82,12 +82,12 @@ def rotY( a ):
 
 def Kepler(E, args):
     ''' Defines the function of Kepler's equation '''
-    return ( E + (args[0] * m.sin(E) - args[1]))
+    return ( E + (args[0] * math.sin(E) - args[1]))
 
 
 def KeplerDeriv (E, args):
     ''' Defines the derivative function of Kepler's equation '''
-    return ( 1 - args[0] * m.cos(E))
+    return ( 1 - args[0] * math.cos(E))
 
 
 def NewtonsAlgotrithm (f, f_prime, current_guess, args, tolerance=0.01):
@@ -113,14 +113,14 @@ def TrueAnomaly():
     eccAnom, steps = NewtonsAlgotrithm(Kepler, KeplerDeriv, E0, args )
     eccFrac = ( 1 - e ) / ( 1 + e )
     halfEccAnom = eccAnom / 2
-    nu = 2 * m.atan( m.sqrt( eccFrac * m.tan(halfEccAnom )) )
+    nu = 2 * math.atan( math.sqrt( eccFrac * math.tan(halfEccAnom )) )
     return nu 
 
 
 def polarEqn():
     ''' Returns return radial value of position of rocket '''
     p = a * ( 1 - e**2)
-    newDeriv = 1 + e * m.cos(TrueAnomaly())
+    newDeriv = 1 + e * math.cos(TrueAnomaly())
     r = p / newDeriv
     return r
 
@@ -128,5 +128,5 @@ def polarEqn():
 def visViva():
     ''' Returns return velocity at elapsed time using Vis Viva equation '''
     r = polarEqn()
-    v = m.sqrt(mu * ( ( 2 / r ) - ( 1 / a )))
+    v = math.sqrt(mu * ( ( 2 / r ) - ( 1 / a )))
     return v
