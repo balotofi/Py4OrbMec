@@ -745,6 +745,28 @@ pygame.font.init()
 
 #-----------------------------------------------------------------------
 
+# Functions for plotting 3D grpahs
+
+def plot_reference_frames( frames, args ):
+	_args = {
+		'figsize'        : ( 12, 12 ),
+		'frame_labels'   : [ '' ] * len( frames),
+		'xlabel'         : "X",
+		'ylabel'         : "Y",
+		'zlabel'         : "Z",
+		'xlim'           : 1,
+		'ylim'           : 1,
+		'zlim'           : 1
+    }
+    for key in args.keys():
+	    _args[ key ] = args[ key ]
+		
+    fig     = plt.figure( figsize = _args[ 'figsize' ])
+    ax      = fig.add_subplot( 111, projection=)
+	
+
+#-----------------------------------------------------------------------
+
 # Functions for displaying Tkinter dialog boxes in child processes.
 
 def _getFileName():

@@ -2,7 +2,9 @@
 # Husseinat Etti-Balogun
 # 28/03/2024
 #---------------------------- IMPORTS ------------------------------------------------------
+
 import math as m
+import numpy as np
 
 #---------------------------- CONSTANTS ----------------------------------------------------
 
@@ -12,10 +14,13 @@ Kerbin_mass = 5.29e22 # mass of the body in kg
 e = 0.832 # eccentricity
 t = 900 # time elapsed in seconds
 a = 2160000 #semi major axis in meters
+Kerbin_mass = 5.29e22 # mass of the body in kg
 
 #---------------------------- EQUATIONS ----------------------------------------------------
 
-Kerbin_mass = 5.29e22 # mass of the body in kg
+r2d = 180 / np.pi # convert a value in radians to degrees
+d2r = 1.0 / r2d # convert a value in degrees to radians
+
 mu = G * Kerbin_mass # kerbin grav const 
 T = 2 * m.pi * m.sqrt( (a**3) / mu ) # the orbital period of rocket around Kerbin in days
 n = ( 2 * m.pi ) / T # mean motion of the rocket rad/sec
@@ -27,13 +32,63 @@ E0 = M - e
 
 #---------------------------- FUNCTION DEFINITIONS ------------------------------------------
 
+
+def norm( v ):
+	'''
+	Returns the norm of a vector v
+	'''
+	return np.linalg.norm( v )
+
+
+def normed( v ):
+	'''
+	Returns the normed vector of a vector v
+	'''
+	return v / np.linalg.norm( v )
+
+
+def rotZ( a ):
+	'''
+	Returns reference Z axis rotation by multiplying rotation matrix by an angle a in radians
+	'''
+	return np.array( [ 
+		[ math.cos( a ), -math.sin( a ), 0 ],
+		[ math.sin( a ),  math.cos( a ), 0 ],
+		[        0,             0,       1 ]
+	] )
+
+
+def rotX( a ):
+	'''
+	Returns reference X axis rotation by multiplying rotation matrix by an angle a in radians
+	'''
+	return np.array( [ 
+		[ 1,              0,             0 ],
+		[ 0, math.cos( a ), -math.sin( a ) ],
+		[ 0, math.sin( a ),  math.cos( a ) ]
+	] )
+
+
+def rotY( a ):
+	'''
+	Returns reference Y axis rotation by multiplying rotation matrix by an angle a in radians
+	'''
+	return np.array( [ 
+		[ math.cos( a ), 0, math.sin( a ) ],
+		[ 0,             1,             0 ],
+		[ -math.sin( a ),0, math.cos( a ) ]
+	] )
+
+
 def Kepler(E, args):
     ''' Defines the function of Kepler's equation '''
     return ( E + (args[0] * m.sin(E) - args[1]))
 
+
 def KeplerDeriv (E, args):
     ''' Defines the derivative function of Kepler's equation '''
     return ( 1 - args[0] * m.cos(E))
+
 
 def NewtonsAlgotrithm (f, f_prime, current_guess, args, tolerance=0.01):
     ''' Returns current guess and step number using Newtons numerical method of root solving variable functions '''
@@ -61,12 +116,14 @@ def TrueAnomaly():
     nu = 2 * m.atan( m.sqrt( eccFrac * m.tan(halfEccAnom )) )
     return nu 
 
+
 def polarEqn():
     ''' Returns return radial value of position of rocket '''
     p = a * ( 1 - e**2)
     newDeriv = 1 + e * m.cos(TrueAnomaly())
     r = p / newDeriv
     return r
+
 
 def visViva():
     ''' Returns return velocity at elapsed time using Vis Viva equation '''
